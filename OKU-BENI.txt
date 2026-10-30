@@ -1,0 +1,74 @@
+MEYDAN TAKSİ - İNTERNET SİTESİ
+==============================
+
+Bu klasördeki dosyalar hazır bir sitedir. Veritabanı, PHP ya da kurulum
+gerektirmez; her hosting'de çalışır.
+
+
+1) TELEFON NUMARASINI DEĞİŞTİRİN (zorunlu)
+------------------------------------------
+"ayarlar.js" dosyasını Not Defteri ile açın.
+"telefon" satırındaki numarayı kendi numaranızla değiştirin, kaydedin.
+
+  telefon: "0532 123 45 67",
+
+Arama düğmeleri ve WhatsApp bağlantıları bu numaradan otomatik hazırlanır.
+WhatsApp numaranız farklıysa "whatsapp" satırına onu yazın.
+Aynı dosyada adres, çalışma saatleri ve harita da var. Harita için Google
+Haritalar'da arattığınız metni yazın (örnek: Meydan Taksi, İlçe, Şehir).
+Boş bıraktığınız bilgiler sitede görünmez.
+
+
+2) FOTOĞRAFLARI EKLEYİN
+-----------------------
+3 fotoğrafınızı "images" klasörüne şu adlarla koyun:
+
+  foto-1.jpg   büyük kutu (sol)
+  foto-2.jpg   sağ üst
+  foto-3.jpg   sağ alt
+
+Uzantı .jpeg, .png ya da .webp de olabilir. Fotoğraf eklemediğiniz kutu
+sade bir yol görseli olarak görünür. Fotoğrafa dokunulunca büyür.
+Yatay fotoğraflar daha iyi durur. Her birini 300 KB altına küçültürseniz
+site hızlı açılır.
+Fotoğraf açıklamalarını (görme engelliler ve Google için) index.html içinde
+alt="..." kısmından değiştirebilirsiniz.
+
+
+3) YAZILARI DEĞİŞTİRMEK İSTERSENİZ
+----------------------------------
+Sitedeki tüm yazılar "index.html" içindedir. Not Defteri ile açıp
+yazıları değiştirebilirsiniz; "<" ve ">" işaretleri arasındaki kısımlara
+dokunmayın. Renkleri "css/stil.css" dosyasının en üstündeki bölümden
+değiştirebilirsiniz.
+
+
+4) YAYINA ALMAK
+---------------
+a) Domain (alan adı) ve hosting satın alın.
+b) Hosting panelinden "Dosya Yöneticisi"ni açın ve "public_html" klasörüne girin
+   (bazı hostinglerde adı "www" ya da "httpdocs" olabilir).
+c) Bu klasörün İÇİNDEKİ her şeyi (klasörün kendisini değil) yükleyin:
+   index.html, ayarlar.js, favicon.svg, robots.txt, .htaccess,
+   css, js, images klasörleri.
+   Zip olarak yükleyip panelden "Çıkar (Extract)" demek de olur.
+d) Domaininizi hostinge bağlayın (hosting firması size DNS bilgisini verir).
+e) Hosting panelinden ücretsiz SSL (https) sertifikasını etkinleştirin.
+   SSL açıldıktan sonra ".htaccess" dosyasındaki 4 satırın başındaki "#"
+   işaretini kaldırırsanız ziyaretçiler otomatik https'ye yönlenir.
+
+".htaccess" noktayla başladığı için bilgisayarınızda gizli görünebilir; bu normaldir.
+
+
+5) BİLMENİZ GEREKENLER
+----------------------
+- Yazı tipleri (Barlow Condensed ve Atkinson Hyperlegible) Google Fonts'tan
+  yüklenir; ziyaretçinin internetine ihtiyaç duyar. Yüklenemezse site
+  sistemin kendi yazı tipiyle sorunsuz açılır.
+- "Konumumu ekle" düğmesi tarayıcılarda yalnızca https (SSL) açıkken çalışır.
+- Taksi çağırma formu bilgileri sunucuya kaydetmez; yalnızca WhatsApp'ta
+  hazır bir mesaj açar. Müşteri mesajı kendisi gönderir.
+- Site çerez kullanmaz.
+- Siteyi bilgisayarınızda denemek için index.html dosyasına çift tıklamanız yeterli.
+  Bu şekilde açtığınızda fotoğrafsız kutularda hangi dosya adını
+  kullanacağınız yazar; yayındaki sitede bu ipucu görünmez.

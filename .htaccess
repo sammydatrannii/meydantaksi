@@ -1,0 +1,24 @@
+# Meydan Taksi - Apache ayarları (isteğe bağlı).
+# Hosting'iniz Apache/LiteSpeed ise siteyi hızlandırır; sorun çıkarırsa bu dosyayı silebilirsiniz.
+
+AddDefaultCharset UTF-8
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 hour"
+  ExpiresByType application/javascript "access plus 1 hour"
+  ExpiresByType image/jpeg "access plus 1 week"
+  ExpiresByType image/png "access plus 1 week"
+  ExpiresByType image/webp "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 week"
+</IfModule>
+
+# SSL (https) sertifikasını hosting panelinizden etkinleştirdikten SONRA
+# aşağıdaki 4 satırın başındaki # işaretini kaldırın.
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]

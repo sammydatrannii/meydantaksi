@@ -1,0 +1,10 @@
+Fotoğraflarınızı bu klasöre şu adlarla koyun:
+
+  foto-1.jpg   (büyük kutu, sol taraf)
+  foto-2.jpg   (sağ üst)
+  foto-3.jpg   (sağ alt)
+
+Uzantı .jpeg, .png veya .webp de olabilir; site otomatik bulur.
+Yatay (geniş) fotoğraflar en iyi sonucu verir.
+Her fotoğrafı 300 KB'ın altına küçültürseniz site daha hızlı açılır.
+Bu yazı dosyasını silebilirsiniz.
